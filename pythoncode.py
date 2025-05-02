@@ -275,22 +275,6 @@ def generate_report(output_file, investigator_name, investigator_id, case_name, 
     return report_file
 
 
-def install_imdisk():
-    try:
-        # Download or use bundled installer
-        installer_path = os.path.join("tools", "imdiskinst.exe")
-        
-        subprocess.run(
-            [installer_path, "/S"],  # Silent install
-            check=True,
-            creationflags=subprocess.CREATE_NO_WINDOW
-        )
-        return True
-    except Exception as e:
-        print(f"ImDisk install failed: {e}")
-        return False
-
-
 class MemoryCaptureApp:
     def __init__(self, root):
         self.root = root
