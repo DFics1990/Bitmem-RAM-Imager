@@ -1,4 +1,3 @@
-# Bitmem
 # BitMem
 
 **BitMem** is an open-source RAM imaging tool developed as part of a cybersecurity graduation project. It creates a bitwise copy of a system’s RAM and includes optional analysis features using Volatility and image mounting.
